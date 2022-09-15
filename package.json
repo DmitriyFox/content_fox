@@ -1,12 +1,12 @@
 {
-  "name": "simple-gulp-start",
+  "name": "Contentfox",
   "version": "1.0.0",
-  "description": "Simple Gulp Start Template (Sass, Browsersync, Uglify, cleanCSS, Autoprefixer)",
+  "description": "ContentFox illustration",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "WebDesign-Master.ru",
+  "author": "MediaFox",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.10",
@@ -20,6 +20,9 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "imagemin-jpeg-recompress": "^7.0.0",
+    "imagemin-pngquant": "^9.0.2",
     "sass": "^1.54.0"
   },
   "dependencies": {
