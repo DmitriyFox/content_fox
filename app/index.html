@@ -4,10 +4,8 @@
 <head>
 
 	<meta charset="utf-8">
-
 	<title>Create illustrations for you by Dmitriy Fox</title>
 	<meta name="description" content="">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<style>
@@ -20,11 +18,11 @@
 			background-color: #ffffff;
 		}
 	</style>
-
 </head>
 
 <body>
-	<header class="main-header grid" style="background-image: url(img/0-header1.jpg);">
+	<header class="main-header grid"
+		style="background-image: url(img/0-header1.webp); background-image: srcset(url(img/0-header1.jpg));">
 		<div class="header-content grid">
 			<h1 class="header-title">Create content for you</h1>
 			<div class="header-buttons">
@@ -33,8 +31,10 @@
 			</div>
 		</div>
 	</header>
+
 	<section class="portfolio-section grid">
-		<div class="portfolio-item grid" style="background-image: url(img/1.png)"><span
+		<div class="portfolio-item grid"
+			style="background-image: url(img/1.webp); background-image: srcset(url(img/1.png));"><span
 				class="portfolio-item__title">3D&nbsp;objects</span></div>
 		<div class="portfolio-item grid" style="background-image: url(img/2.jpg)"><span
 				class="portfolio-item__title">Artist</span></div>
@@ -50,12 +50,14 @@
 				class="portfolio-item__title">Nature art</span></div>
 		<div class="portfolio-item grid" style="background-image: url(img/8.jpg)"><span
 				class="portfolio-item__title">Characters</span></div>
-		<div class="portfolio-item grid" style="background-image: url(img/9.jpg)"><span
+		<div class="portfolio-item grid"
+			style="background-image: url(img/9.webp); background-image: image-set(url(img/9.jpg) 1x);"><span
 				class="portfolio-item__title">Background</span></div>
 		<div class="buttoncase text-center">
 			<a href="portfolio.html" class="button">View portfolio</a>
 		</div>
 	</section>
+
 	<section class="section-ready landing-section">
 		<div class="container grid">
 			<div class="ready-left">
@@ -68,10 +70,15 @@
 					aspernatur quaerat, suscipit commodi culpa.</p>
 			</div>
 			<div class="ready-right">
-				<img class="img-responsive" src="img/example-2.jpg" alt="Example">
+				<picture>
+					<source type="image/webp" srcset="img/example-2.webp">
+					<source type="image/jpeg" srcset="img/example-2.jpg">
+					<img class="img-responsive" src="img/example-2.jpg" alt="Example">
+				</picture>
 			</div>
 		</div>
 	</section>
+
 	<section class="formsection">
 		<div class="container">
 			<form class="form grid">
@@ -88,7 +95,8 @@
 			<h2 class="title section-blog__title">Blog about create content for you</h2>
 			<div class="blog-home grid">
 				<a href="#" class="blog-item grid">
-					<span class="blog-item-img" style="background-image: url(img/0-header2.jpg);"></span>
+					<span class="blog-item-img"
+						style="background-image: url(img/0-header2.webp); background-image: image-set(url(img/0-header2.jpg) 1x);"></span>
 					<span class="blog-item-content grid">
 						<h4 class="blog-item-content__title">Our work in corporate</h4>
 						<p class="blog-item-content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -96,7 +104,8 @@
 					</span>
 				</a>
 				<a href="#" class="blog-item grid">
-					<span class="blog-item-img" style="background-image: url(img/0-header3.jpg);"></span>
+					<span class="blog-item-img"
+						style="background-image: url(img/0-header3.webp); background-image: image-set(url(img/0-header3.jpg) 1x);"></span>
 					<span class="blog-item-content grid">
 						<h4 class="blog-item-content__title">Our work in corporate</h4>
 						<p class="blog-item-content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -104,7 +113,8 @@
 					</span>
 				</a>
 				<a href="#" class="blog-item grid">
-					<span class="blog-item-img" style="background-image: url(img/0-header4.jpg);"></span>
+					<span class="blog-item-img"
+						style="background-image: url(img/0-header4.webp); background-image: image-set(url(img/0-header4.jpg) 1x);"></span>
 					<span class="blog-item-content grid">
 						<h4 class="blog-item-content__title">Our work in corporate</h4>
 						<p class="blog-item-content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -112,7 +122,8 @@
 					</span>
 				</a>
 				<a href="#" class="blog-item grid">
-					<span class="blog-item-img" style="background-image: url(img/0-header6.jpg);"></span>
+					<span class="blog-item-img"
+						style="background-image: url(img/0-header6.webp); background-image: image-set(url(img/0-header6.jpg) 1x);"></span>
 					<span class="blog-item-content grid">
 						<h4 class="blog-item-content__title">Our work in corporate</h4>
 						<p class="blog-item-content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -120,7 +131,8 @@
 					</span>
 				</a>
 				<a href="#" class="blog-item grid">
-					<span class="blog-item-img" style="background-image: url(img/0-header7.jpg);"></span>
+					<span class="blog-item-img"
+						style="background-image: url(img/0-header7.webp);background-image: image-set(url(img/0-header7.jpg) 1x);"></span>
 					<span class="blog-item-content grid">
 						<h4 class="blog-item-content__title">Our work in corporate</h4>
 						<p class="blog-item-content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -128,7 +140,8 @@
 					</span>
 				</a>
 				<a href="#" class="blog-item grid">
-					<span class="blog-item-img" style="background-image: url(img/0-header9.jpg);"></span>
+					<span class="blog-item-img"
+						style="background-image: url(img/0-header9.webp);background-image: image-set(url(img/0-header9.jpg) 1x);"></span>
 					<span class="blog-item-content grid">
 						<h4 class="blog-item-content__title">Our work in familly business offer</h4>
 						<p class="blog-item-content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -141,6 +154,7 @@
 			</div>
 		</div>
 	</section>
+
 	<footer class="main-footer">
 		<div class="container">
 			<div class="footer__logo">
@@ -150,6 +164,7 @@
 			<div class="footer-copy">~©~</div>
 		</div>
 	</footer>
+
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
 
