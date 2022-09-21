@@ -94,6 +94,8 @@
     padding: 10px
     grid-template-columns: repeat(4, 1fr)
     grid-gap: 10px
+    background-color: lighten($gray, 10%)
+    //grid-gap: 0
 
 .portfolio-item
     position: relative
@@ -106,6 +108,8 @@
     transition: color .5s ease
     cursor: pointer
     color: #fff
+    border-radius: 15px
+    overflow: hidden
     &:hover
         color: $accent
         &::before
@@ -236,15 +240,19 @@
     padding: 60px 0
     background-color: darken($dark, 8%)
     text-align: center
+    color: darken($light, 50%)
 
 .footer__logo
     font-family: intro-grid
-    font-size: 24px
-    line-height: 1.2
-    color: $light
+    font-size: 26px
+    line-height: 1.16
     span
         display: block
         font-size: 34px
-
+        color: $light
+.footer-copy
+    font-size: 14px
+    font-weight: bold
+    margin-top: 20px
 
 @import "media" // Всегда в конце
