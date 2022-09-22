@@ -24,7 +24,7 @@
 	<header class="main-header grid"
 		style="background-image: url(img/0-header1.webp); background-image: srcset(url(img/0-header1.jpg));">
 		<div class="header-content grid">
-			<h1 class="header-title">Create content for&nbsp;you</h1>
+			<h1 class="header-content__title">Create content for&nbsp;you</h1>
 			<div class="header-buttons">
 				<a href="#" class="button">Follow</a>
 				<a href="#" class="button button--grey">Go Home</a>
@@ -53,7 +53,7 @@
 		<div class="portfolio-item grid"
 			style="background-image: url(img/9.webp); background-image: image-set(url(img/9.jpg) 1x);"><span
 				class="portfolio-item__title">Background</span></div>
-		<div class="buttoncase text-center">
+		<div class="buttoncase portfolio-section__buttoncase text-center">
 			<a href="portfolio.html" class="button">View portfolio</a>
 		</div>
 	</section>
@@ -61,20 +61,21 @@
 	<section class="ready-section landing-section">
 		<div class="container grid">
 			<div class="ready-left">
-				<h2 class="title ready-left__title">Create content for you<span class="ready-left__title-desc">book,
+				<h2 class="title ready-left__title">Create content for&nbsp;you<span
+						class="ready-left__title-desc">book,
 						presentation, site and&nbsp;more</span></h2>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, ad esse nesciunt quaerat odio nulla
-					ex quia mollitia? Nisi ad, quos perferendis tenetur voluptatem animi rerum soluta modi vitae itaque?
+				<p class="ready-left__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ad, quos
+					perferendis tenetur voluptatem animi rerum soluta modi vitae itaque?
 				</p>
-				<p>Possimus impedit ipsum voluptatem illo ducimus nemo voluptatum, quas commodi laboriosam doloremque
-					tempora, aliquid iste. Repellendus cum maiores delectus laborum. Illo, ducimus! Incidunt sed velit
-					aspernatur quaerat, suscipit commodi culpa.</p>
+				<p class="ready-left__text">Possimus impedit ipsum voluptatem illo ducimus nemo voluptatum, quas commodi
+					laboriosam doloremque
+					tempora, aliquid iste. Repellendus cum maiores delectus laborum.</p>
 			</div>
 			<div class="ready-right">
 				<picture>
-					<source type="image/webp" srcset="img/example-2.webp">
-					<source type="image/jpeg" srcset="img/example-2.jpg">
-					<img class="img-responsive" src="img/example-2.jpg" alt="Example">
+					<source type="image/webp" srcset="img/DmitriyFox12_foxCharacter.webp">
+					<source type="image/jpeg" srcset="img/DmitriyFox12_foxCharacter800px.jpg">
+					<img class="img-responsive" src="img/DmitriyFox12_foxCharacter800px.jpg" alt="Example">
 				</picture>
 			</div>
 		</div>
@@ -83,9 +84,15 @@
 	<section class="form-section">
 		<div class="container">
 			<form class="form grid">
-				<div><input class="form__input" type="text" name="name" placeholder="You name..." required></div>
-				<div><input class="form__input" type="text" name="name" placeholder="You tel..."></div>
-				<div><input class="form__input" type="text" name="name" placeholder="You e-mail..."></div>
+				<div>
+					<input class="form__input" type="text" name="name" placeholder="You name..." required>
+				</div>
+				<div>
+					<input class="form__input" type="text" name="name" placeholder="You tel...">
+				</div>
+				<div>
+					<input class="form__input" type="text" name="name" placeholder="You e-mail...">
+				</div>
 				<div><button class="button form__button">I want content</button></div>
 			</form>
 		</div>

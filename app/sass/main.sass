@@ -30,7 +30,7 @@
 .header-content .button
     margin: 10px
 
-.header-title
+.header-content__title
     font-family: intro-grid, sans-serif
     font-size: 60px
     font-weight: normal
@@ -94,7 +94,7 @@
     padding: 10px
     grid-template-columns: repeat(4, 1fr)
     grid-gap: 10px
-    background-color: lighten($gray, 10%)
+    background-color: darken($dark, 10%)
     //grid-gap: 0
 
 .portfolio-item
@@ -111,7 +111,7 @@
     border-radius: 15px
     overflow: hidden
     &:hover
-        //color: $accent
+        color: $accent
         &::before
             opacity: .45
     &::before
@@ -144,25 +144,29 @@
     padding: $gutter $gutter 50px
 
 .landing-section
-    padding: 80px 0
+    padding: 
+        top: 200px
+        bottom: 100px
 
 .ready-section
     background-color: $light
     .container
         grid-template-columns: 1fr 1fr
+        //background-image: url(../img/DmitriyFox12_foxCharacter.webp)
+        background-size: cover
+        background-position: right
 
 .ready-left
     border-right: 1px solid #dadada
     font-size: 18px
     padding:
-        top: 60px
-        bottom: 60px
-        right: 60px
+        right: 40px
     &__title
         margin-top: 0 
         margin-bottom: 40px 
     &__title-desc
         display: block
+        font-weight: normal
 
 .ready-right
     padding-left: 40px
