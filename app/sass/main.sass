@@ -46,13 +46,13 @@
     padding: 10px 60px
     font-size: 20px
     font-weight: 800
-    border-radius: 2px
+    border-radius: $bradius
     text-align: center
     position: relative
     outline: none
     transition: background-color .1s ease
     cursor: pointer
-    &::after
+    //&::after
         transition: background-color .2s ease
         position: absolute
         content: ''
@@ -62,8 +62,8 @@
         width: 100%
         background-color: darken($accent, 50%)
         opacity: .18
-        border-bottom-left-radius: 2px
-        border-bottom-right-radius: 2px
+        border-bottom-left-radius: $bradius
+        border-bottom-right-radius: $bradius
     &:focus, &:hover
         text-decoration: none
         color: #fff
@@ -109,7 +109,7 @@
     transition: color .5s ease
     cursor: pointer
     color: #fff
-    border-radius: 15px
+    border-radius: $bradius
     overflow: hidden
     &:hover
         color: $accent
@@ -171,6 +171,9 @@
 
 .ready-right
     padding-left: 40px
+    &__img
+        border-radius: $bradius
+        overflow: hidden
 
 .form-section
     padding: 30px 0
@@ -182,6 +185,7 @@
 
 .form__input
     background-color: lighten($dark, 6%)
+    border-radius: $bradius
     &::placeholder
         color: lighten($dark, 25%)
     &:focus
@@ -214,6 +218,7 @@
     transition: background-color .25s ease
     overflow: hidden
     color: #333
+    border-radius: $bradius
     &:hover
         background-color: $light
         .blog-item-content__title
