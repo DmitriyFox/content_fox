@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 
 	<meta charset="utf-8">
-	<title>Create content illustrations for you by Dmitriy Fox</title>
+	<title>Create content illustrations for you by Dmitriy Lisin</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -34,7 +34,7 @@
 			<h1 class="header-content__title">Create content for&nbsp;you</h1>
 			<div class="header-buttons">
 				<a href="#" class="button">Follow</a>
-				<a href="#" class="button button--grey">Go Home</a>
+				<a href="//portfolio.html" class="button button--grey">Go Home</a>
 			</div>
 		</div>
 	</header>
@@ -102,19 +102,19 @@
 
 	<section class="form-section">
 		<div class="container">
-			<form class="form grid">
-				<div>
-					<input class="form__input" required id="name" type="text" name="name" placeholder="You name..." required>
-				</div>
-				<div>
-					<input class="form__input" required id="tel" type="tel" name="tel" placeholder="You tel...">
-				</div>
-				<div>
-					<input class="form__input" required id="email" type="email" name="email" placeholder="You e-mail...">
-				</div>
-				<!-- <div> -->
-					<button class="button form__button" type="submit">I want content</button>
-				<!-- </div> -->
+			<form class="form grid" action="/my-handling-form-page" method="post">
+				
+				<label class="form__label" for="name">You name, please</label>
+				<input class="form__input" id="name" type="text" name="name" placeholder="You name..." required>
+
+				<label class="form__label" for="tel"></label>
+				<input class="form__input" required id="tel" type="tel" name="tel" placeholder="You tel...">
+
+				<label class="form__label" for="email"></label>
+				<input class="form__input" required id="email" type="email" name="mail" placeholder="You e-mail...">
+
+				<button class="button form__button" type="submit">I want content</button>
+				
 			</form>
 		</div>
 	</section>
