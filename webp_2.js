@@ -22,3 +22,5 @@ const   produceWebP = async () => {
   console.log('JPGs and JPEGs processed')
 }
 produceWebP()
+
+// node webp.js - start js
