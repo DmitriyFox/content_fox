@@ -21,6 +21,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
+    "imagemin": "^8.0.1",
     "imagemin-jpeg-recompress": "^7.0.0",
     "imagemin-pngquant": "^9.0.2",
     "sass": "^1.54.0"
