@@ -14,6 +14,13 @@
     background-position: center
     position: relative
     align-items: center
+    /* Фолбэк */
+    background-image: url('../img/1024/0-header1.jpg')
+    /* Для Chrome и Safari */
+    background-image: -webkit-image-set(url('../img/orign/0-header1.webp') 2x, url('../img/1024/0-header1.webp') 1x)
+    /* Для Firefox */
+    background-image: image-set(url('../img/orign/0-header1.avif') type('image/avif') 2x, url('../img/1024/0-header1.avif') type('image/avif') 1x, url('../img/orign/0-header1.webp') type('image/webp') 2x, url('../img/1024/0-header1.webp') type('image/webp') 1x, url('../img/orign/0-header1.jpg') 2x, url('../img/1024/0-header1.jpg') 1x)
+
     &::before
         content: ''
         position: absolute
@@ -29,6 +36,10 @@
     z-index: 1
     text-align: center
     color: #fff
+
+    &__img
+        width: 100%
+
 .header-content .button
     margin: 10px
 

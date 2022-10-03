@@ -28,9 +28,14 @@
 </head>
 
 <body>
-	<header class="main-header grid"
-		style="background-image: url(img/orign/0-header1.webp); background-image: srcset(url(img/orign/0-header1.jpg));">
+	<header class="main-header grid">
 		<div class="header-content grid">
+			<!-- <picture class="header-content__img">
+				<source src="img/1024/0-header1.avif 1x, img/orign/0-header1.avif 2x" type="image/avif">
+				<source src="img/1024/0-header1.webp 1x, img/orign/0-header1.webp 2x" type="image/webp">
+				<source src="img/1024/0-header1.jpg 1x, img/orign/0-header1.jpg 2x" type="image/jpg">
+				<img src="img/1024/0-header1.jpg" srcset="img/orign/0-header1.jpg 2x" alt="Content images">
+			</picture> -->
 			<h1 class="header-content__title">Create content for&nbsp;you</h1>
 			<div class="header-buttons">
 				<a href="portfolio.html" class="button">Follow</a>
@@ -41,8 +46,9 @@
 
 	<section class="portfolio-section grid">
 		<div class="portfolio-item grid"
-			style="background-image: url(img/1024/1.webp); background-image: srcset(url(img/1024/1.png));"><span
-				class="portfolio-item__title">3D&nbsp;designs</span></div>
+			style="background-image: url('../img/1024/1.png'); background-image: webkit-image-set(url('../img/1024/1.webp') 2x, url('../img/512/1.webp') 1x)">
+			<span class="portfolio-item__title">3D&nbsp;designs</span>
+		</div>
 		<div class="portfolio-item grid"
 			style="background-image: url(img/1024/2.webp); background-image: srcset(url(img/1024/2.jpg))"><span
 				class="portfolio-item__title">Painting</span></div>
@@ -91,10 +97,14 @@
 			</div>
 			<div class="ready-right">
 				<picture>
-					<source type="image/webp" srcset="img/1024/DmitriyFox12_foxCharacter.webp">
-					<source type="image/jpeg" srcset="img/1024/DmitriyFox12_foxCharacter.jpg">
-					<img class="ready-right__img img-responsive" src="img/1024/DmitriyFox12_foxCharacter.jpg"
-						alt="Example">
+					<source type="image/avif"
+						srcset="img/1024/DmitriyFox12_foxCharacter.avif 1x, img/orign/DmitriyFox12_foxCharacter.avif 2x">
+					<source type="image/webp"
+						srcset="img/1024/DmitriyFox12_foxCharacter.webp 1x, img/orign/DmitriyFox12_foxCharacter.webp 2x">
+					<source type="image/jpeg"
+						srcset="img/1024/DmitriyFox12_foxCharacter.jpg 1x, img/orign/DmitriyFox12_foxCharacter.jpg 2x">
+					<img class="ready-right__img img-responsive" src="img/512/DmitriyFox12_foxCharacter.jpg"
+						srcset="img/orign/DmitriyFox18_apple_Photography.jpg 2x" width="540" height="390" alt="Example">
 				</picture>
 			</div>
 		</div>
@@ -103,7 +113,7 @@
 	<section class="form-section">
 		<div class="container">
 			<form class="form grid" action="/my-handling-form-page" method="post">
-				
+
 				<label class="form__label" for="name">You name, please</label>
 				<input class="form__input" id="name" type="text" name="name" placeholder="You name..." required>
 
@@ -114,7 +124,7 @@
 				<input class="form__input" required id="email" type="email" name="mail" placeholder="You e-mail...">
 
 				<button class="button form__button" type="submit">I want content</button>
-				
+
 			</form>
 		</div>
 	</section>
@@ -128,35 +138,42 @@
 						style="background-image: url(img/1024/0-header2.webp); background-image: image-set(url(img/1024/0-header2.jpg) 1x);"></span>
 					<span class="blog-item-content grid">
 						<h3 class="blog-item-content__title">Our work in corporate</h3>
-						<p class="blog-item-content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-							Exercitationem, voluptatum..</p>
+						<p class="blog-item-content__text">We have been cooperating with a manufacturer of wastewater
+							treatment plants for a long time. Required content in the form of 3D objects of wastewater
+							treatment plants. Also, drawings were created according to state requirements and much more
+							...</p>
 					</span>
 				</a>
 				<a href="#" class="blog-item grid">
 					<span class="blog-item-img"
 						style="background-image: url(img/1024/0-header3.webp); background-image: image-set(url(img/1024/0-header3.jpg) 1x);"></span>
 					<span class="blog-item-content grid">
-						<h3 class="blog-item-content__title">Our work in corporate</h3>
-						<p class="blog-item-content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-							Exercitationem, voluptatum..</p>
+						<h3 class="blog-item-content__title">Our work in kids product</h3>
+						<p class="blog-item-content__text">For children's magazines and books, it was required to create
+							characters. From kittens to words, the characters have been designed with highly detailed
+							graphics in rich colors...</p>
 					</span>
 				</a>
 				<a href="#" class="blog-item grid">
 					<span class="blog-item-img"
-						style="background-image: url(img/1024/DimaFox1_Old_empty_scroll_sepia_tone.webp); background-image: image-set(url(img/1024/0-header4.jpg) 1x);"></span>
+						style="background-image: url('../img/512/DimaFox1_Old_empty_scroll_sepia_tone.jpg'); 
+						background-image: -webkit-image-set(url('../img/512/DimaFox1_Old_empty_scroll_sepia_tone.webp') 1x, url('../img/1024/DimaFox1_Old_empty_scroll_sepia_tone.webp') 2x);
+						background-image: image-set(url('../img/1024/DimaFox1_Old_empty_scroll_sepia_tone.avif') type('image/avif') 2x, url('../img/512/DimaFox1_Old_empty_scroll_sepia_tone.avif') type('image/avif') 1x, url('../img/1024/DimaFox1_Old_empty_scroll_sepia_tone.webp') type('image/webp') 2x, url('../img/512/DimaFox1_Old_empty_scroll_sepia_tone.webp') type('image/webp') 1x,url('../img/1024/DimaFox1_Old_empty_scroll_sepia_tone.jpg') type('image/jpg') 2x, url('../img/512/DimaFox1_Old_empty_scroll_sepia_tone.jpg') type('image/jpg') 1x
+							);"></span>
 					<span class="blog-item-content grid">
-						<h3 class="blog-item-content__title">Our work in corporate</h3>
-						<p class="blog-item-content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-							Exercitationem, voluptatum..</p>
+						<h3 class="blog-item-content__title">Black and white</h3>
+						<p class="blog-item-content__text">Graphic works in muted colors or black and white graphics are
+							in demand for dramatic, fiction. Poems, poems, Japanese style and ...</p>
 					</span>
 				</a>
 				<a href="#" class="blog-item grid">
 					<span class="blog-item-img"
 						style="background-image: url(img/1024/0-header6.webp); background-image: image-set(url(img/1024/0-header6.jpg) 1x);"></span>
 					<span class="blog-item-content grid">
-						<h3 class="blog-item-content__title">Our work in corporate</h3>
-						<p class="blog-item-content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-							Exercitationem, voluptatum..</p>
+						<h3 class="blog-item-content__title">From sketch and concept to final</h3>
+						<p class="blog-item-content__text">Often the creation of games and virtual worlds requires
+							concepts - something between a sketch and a completed full-color work. We carry out such
+							types on request in a short time and with excellent quality ...</p>
 					</span>
 				</a>
 				<a href="#" class="blog-item grid">
