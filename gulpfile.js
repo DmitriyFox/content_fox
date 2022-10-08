@@ -34,7 +34,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('sass', function () {
-	return gulp.src('app/sass/**/*.sass')
+	return gulp.src('app/sass/**/*.*')
 		.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
 		.pipe(rename({ suffix: '.min', prefix: '' }))
 		.pipe(autoprefixer(['last 15 versions']))
