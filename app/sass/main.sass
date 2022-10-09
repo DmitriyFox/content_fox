@@ -16,13 +16,16 @@
     position: relative
     align-items: center
     overflow: hidden
+    opacity: 0
+    //z-index: 0
+
     /* Фолбэк */
     background-image: url('../img/main/FoxD10_a_home_for_all_the_critters_of_the_forest_big_tree_tall__4x1600.jpg')
     /* Для Chrome и Safari */
     background-image: -webkit-image-set(url('../img/main/FoxD10_a_home_for_all_the_critters_of_the_forest_big_tree_tall__4x1600.webp') 1x)
     /* Для Firefox */
     background-image: image-set(url('../img/main/FoxD10_a_home_for_all_the_critters_of_the_forest_big_tree_tall__4x1600.avif') type('image/avif') 2x, url('../img/main/FoxD10_a_home_for_all_the_critters_of_the_forest_big_tree_tall__4x1600.avif') type('image/avif') 1x, url('../img/main/FoxD10_a_home_for_all_the_critters_of_the_forest_big_tree_tall__4x1600.webp') type('image/webp') 2x, url('../img/main/FoxD10_a_home_for_all_the_critters_of_the_forest_big_tree_tall__4x1600.webp') type('image/webp') 1x, url('../img/main/FoxD10_a_home_for_all_the_critters_of_the_forest_big_tree_tall__4x1600.jpg') 2x, url('../img/main/FoxD10_a_home_for_all_the_critters_of_the_forest_big_tree_tall__4x1600.jpg') 1x)
-    animation: bgSliderAnimation 36s infinite linear alternate 0s
+    animation: bgSliderAnimation 36s linear infinite 0s
 
     &::before
         content: ''
@@ -38,14 +41,79 @@
     0%
         opacity: 0
         animation-timing-function: ease-in
-    8%
+    4%
         opacity: 1
         animation-timing-function: ease-out
-    17%
+    8%
         opacity: 1
-    25%
+    12%
         opacity: 0
-    100%
+    16%
+        opacity: 0
+
+    16%
+        opacity: 0
+        animation-timing-function: ease-in
+    20%
+        opacity: 1
+        animation-timing-function: ease-out
+    24%
+        opacity: 1
+    28%
+        opacity: 0
+    32%
+        opacity: 0
+
+    32%
+        opacity: 0
+        animation-timing-function: ease-in
+    36%
+        opacity: 1
+        animation-timing-function: ease-out
+    40%
+        opacity: 1
+    44%
+        opacity: 0
+    48%
+        opacity: 0
+
+    48%
+        opacity: 0
+        animation-timing-function: ease-in
+    52%
+        opacity: 1
+        animation-timing-function: ease-out
+    56%
+        opacity: 1
+    60%
+        opacity: 0
+    64%
+        opacity: 0
+
+    64%
+        opacity: 0
+        animation-timing-function: ease-in
+    68%
+        opacity: 1
+        animation-timing-function: ease-out
+    72%
+        opacity: 1
+    76%
+        opacity: 0
+    80%
+        opacity: 0
+
+    80%
+        opacity: 0
+        animation-timing-function: ease-in
+    84%
+        opacity: 1
+        animation-timing-function: ease-out
+    88%
+        opacity: 1
+    92%
+        opacity: 0
+    96%
         opacity: 0
 
     0%
@@ -62,6 +130,7 @@
         background-image: -webkit-image-set(url('../img/main/DimaFox22_A_ancient_magical_forest_tall_pink_trees_moonlit_x1600.webp') 1x)
         /* Для Firefox */
         background-image: image-set(url('../img/main/DimaFox22_A_ancient_magical_forest_tall_pink_trees_moonlit_x1600.avif') type('image/avif') 2x, url('../img/main/DimaFox22_A_ancient_magical_forest_tall_pink_trees_moonlit_x1600.avif') type('image/avif') 1x, url('../img/main/DimaFox22_A_ancient_magical_forest_tall_pink_trees_moonlit_x1600.webp') type('image/webp') 2x, url('../img/main/DimaFox22_A_ancient_magical_forest_tall_pink_trees_moonlit_x1600.webp') type('image/webp') 1x, url('../img/main/DimaFox22_A_ancient_magical_forest_tall_pink_trees_moonlit_x1600.jpg') 2x, url('../img/main/DimaFox22_A_ancient_magical_forest_tall_pink_trees_moonlit_x1600.jpg') 1x)
+        //animation-delay: 6s
     40%
         /* Фолбэк */
         background-image: url('../img/main/DmitriyFox12_Cute_baby_fox_big_eyes_Pixar_Dreamworks_Character_x1600.jpg')
@@ -69,6 +138,8 @@
         background-image: -webkit-image-set(url('../img/main/DmitriyFox12_Cute_baby_fox_big_eyes_Pixar_Dreamworks_Character_x1600.webp') 1x)
         /* Для Firefox */
         background-image: image-set(url('../img/main/DmitriyFox12_Cute_baby_fox_big_eyes_Pixar_Dreamworks_Character_x1600.avif') type('image/avif') 2x, url('../img/main/DmitriyFox12_Cute_baby_fox_big_eyes_Pixar_Dreamworks_Character_x1600.avif') type('image/avif') 1x, url('../img/main/DmitriyFox12_Cute_baby_fox_big_eyes_Pixar_Dreamworks_Character_x1600.webp') type('image/webp') 2x, url('../img/main/DmitriyFox12_Cute_baby_fox_big_eyes_Pixar_Dreamworks_Character_x1600.webp') type('image/webp') 1x, url('../img/main/DmitriyFox12_Cute_baby_fox_big_eyes_Pixar_Dreamworks_Character_x1600.jpg') 2x, url('../img/main/DmitriyFox12_Cute_baby_fox_big_eyes_Pixar_Dreamworks_Character_x1600.jpg') 1x)
+        //animation-delay: 12s
+
     60%
         /* Фолбэк */
         background-image: url('../img/main/DimaFox1_Old_empty_scroll_ultra_detailed_sepia_tone_x1600.jpg')
@@ -76,6 +147,8 @@
         background-image: -webkit-image-set(url('../img/main/DimaFox1_Old_empty_scroll_ultra_detailed_sepia_tone_x1600.webp') 1x)
         /* Для Firefox */
         background-image: image-set(url('../img/main/DimaFox1_Old_empty_scroll_ultra_detailed_sepia_tone_x1600.avif') type('image/avif') 2x, url('../img/main/DimaFox1_Old_empty_scroll_ultra_detailed_sepia_tone_x1600.avif') type('image/avif') 1x, url('../img/main/DimaFox1_Old_empty_scroll_ultra_detailed_sepia_tone_x1600.webp') type('image/webp') 2x, url('../img/main/DimaFox1_Old_empty_scroll_ultra_detailed_sepia_tone_x1600.webp') type('image/webp') 1x, url('../img/main/DimaFox1_Old_empty_scroll_ultra_detailed_sepia_tone_x1600.jpg') 2x, url('../img/main/DimaFox1_Old_empty_scroll_ultra_detailed_sepia_tone_x1600.jpg') 1x)
+        //animation-delay: 18s
+
     80%
         /* Фолбэк */
         background-image: url('../img/main/c45ba5c7-cc3a-x1600.jpg')
@@ -83,6 +156,8 @@
         background-image: -webkit-image-set(url('../img/main/c45ba5c7-cc3a-x1600.webp') 1x)
         /* Для Firefox */
         background-image: image-set(url('../img/main/c45ba5c7-cc3a-x1600.avif') type('image/avif') 2x, url('../img/main/c45ba5c7-cc3a-x1600.avif') type('image/avif') 1x, url('../img/main/c45ba5c7-cc3a-x1600.webp') type('image/webp') 2x, url('../img/main/c45ba5c7-cc3a-x1600.webp') type('image/webp') 1x, url('../img/main/c45ba5c7-cc3a-x1600.jpg') 2x, url('../img/main/c45ba5c7-cc3a-x1600.jpg') 1x)
+        //animation-delay: 24s
+
     100%
         /* Фолбэк */
         background-image: url('../img/main/gazdima5_nausicca_of_the_valley_of_the_wind_in_the_style_of_hor_x1600.jpg')
@@ -90,6 +165,7 @@
         background-image: -webkit-image-set(url('../img/main/gazdima5_nausicca_of_the_valley_of_the_wind_in_the_style_of_hor_x1600.webp') 1x)
         /* Для Firefox */
         background-image: image-set(url('../img/main/gazdima5_nausicca_of_the_valley_of_the_wind_in_the_style_of_hor_x1600.avif') type('image/avif') 2x, url('../img/main/gazdima5_nausicca_of_the_valley_of_the_wind_in_the_style_of_hor_x1600.avif') type('image/avif') 1x, url('../img/main/gazdima5_nausicca_of_the_valley_of_the_wind_in_the_style_of_hor_x1600.webp') type('image/webp') 2x, url('../img/main/gazdima5_nausicca_of_the_valley_of_the_wind_in_the_style_of_hor_x1600.webp') type('image/webp') 1x, url('../img/main/gazdima5_nausicca_of_the_valley_of_the_wind_in_the_style_of_hor_x1600.jpg') 2x, url('../img/main/gazdima5_nausicca_of_the_valley_of_the_wind_in_the_style_of_hor_x1600.jpg') 1x)
+        //animation-delay: 30s
 
 .header-content
     padding: 60px $gutter
